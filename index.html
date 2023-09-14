@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gijo Joseph</title>
+
+    
+
+    <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/da9bef436c.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.png" alt="logo" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#resume">Resume</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#Projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>PYTHON DEVELOPER</p>
+                <h1>Hi, I am <span>Gijo</span><br>Joseph from India</h1>
+            </div>
+        </div>
+    </div>
+    <!----------abouut---------------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col1">
+                    <img src="images/user.png" alt="">
+                </div>
+                <div class="about-col2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Hello, I'm Gijo Joseph, and I'm passionate about coding and technology. With a diverse skill set
+                        that includes HTML, CSS, JavaScript, Python, and SQL, I'm on a mission to turn my love for
+                        programming into innovative solutions that make a difference.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Front-End Development</span><br>Proficient in creating responsive and visually
+                                engaging web interfaces using HTML, CSS, and JavaScript.</li>
+                            <li><span>Back-End Development</span><br>Experienced in designing and implementing
+                                server-side solutions, including database management and server logic, to ensure the
+                                functionality and performance of web applications.</li>
+                            <li><span>App Development</span><br>Skilled in developing dynamic and user-friendly web
+                                applications that deliver exceptional user experiences.</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2023 - Current</span><br>Web Developer Trainee at Brototype.</li>
+                            <li><span>2019 - 2023</span><br>Medical Insurance Billing Staff at HiCare Medical Center
+                            </li>
+                            <li><span>2017 - 2019</span><br>System Administrator at Aries Estrado Technologies.</li>
+                            <li><span>2016 - 2017</span><br>Hardware and Networking Technician at Netplus Computers.
+                            </li>
+
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2023</span><br>Web Developer Training at Brototype.</li>
+                            <li><span>2015</span><br>Microsoft Certified Systems Engineer (MCSE)</li>
+                            <li><span>2015</span><br>Cisco Certified Network Associate</li>
+                            <li><span>2014</span><br>BCA from Mahatma Gandhi University, Kottayam.</li>
+
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--------Services------------------>
+
+    <div id="services">
+        <div class="container">
+
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Website Development</h2>
+                    <p>Create visually stunning and responsive websites from scratch.
+                        Redesign and revamp existing websites for improved user experiences.</p>
+                    <a href="#">Learn more</a>
+                </div>
+
+                <div>
+                    <i class="fa-brands fa-app-store"></i>
+                    <h2>Web Application Development</h2>
+                    <p>Develop custom web applications to streamline your business processes. Create interactive and
+                        dynamic web solutions that engage users.</p>
+                    <a href="#">Learn more</a>
+                </div>
+
+                <div>
+                    <i class="fa-solid fa-crop"></i>
+                    <h2>Front-End Development</h2>
+                    <p>Design and implement intuitive user interfaces (UI) using HTML, CSS, and JavaScript.Ensure
+                        cross-browser compatibility and responsive design for optimal user experiences.</p>
+                    <a href="#">Learn more</a>
+                </div>
+
+            </div>
+            <a href="#" class="btn1">See more</a>
+        </div>
+    </div>
+
+    <!-----Projects------->
+
+    <div id="Projects">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work-1.png" alt="work1">
+                    <div class="layer">
+                        <h3>YouTube Clone</h3>
+                        <p>Demonstrates proficiency in HTML, CSS, JavaScript, and back-end technologies.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+
+                <div class="work">
+                    <img src="images/work-2.png" alt="work2">
+                    <div class="layer">
+                        <h3>LinkedIn Clone</h3>
+                        <p>A comprehensive social networking platform Includes user profiles, connections, job postings,
+                            and messaging capabilities.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+
+                <div class="work">
+                    <img src="images/work-3.png" alt="work3">
+                    <div class="layer">
+                        <h3>Personal Portfolio Website</h3>
+                        <p>The very website you're exploring now, showcasing my skills, services, and expertise.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn1">See more</a>
+        </div>
+    </div>
+
+    <!--------Contact------------>
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-regular fa-envelope"></i>gijojoseph23@gmail.com.com</p>
+                    <p><i class="fa-solid fa-phone"></i>9544490853</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/"><i class="fab fa-facebook"></i></a>
+                        <a href="https://twitter.com/"><i class="fa-brands fa-x-twitter"></i></a>
+                        <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.youtube.com/@gijojoseph8911"><i class="fab fa-youtube"></i></a>
+                        <a
+                            href="https://www.linkedin.com/public-profile/settings?trk=d_flagship3_profile_self_view_public_profile"><i
+                                class="fab fa-linkedin"></i></a>
+                    </div>
+                    <a href="images/my-cv.pdf" download="" class="btn1 btn2" id="resume">Download CV</a>
+                </div>
+
+                <div class="contact-right">
+                    <div id="error_message"></div>
+                    <form name="submit-to-google-sheet"  id="gform" onsubmit="return validate();">
+                        <input type="text" name="name" placeholder="Your Name" id="name">
+                        <input type="text" name="subject" placeholder="Subject" id="subject">
+                        <input type="text" name="mobile" placeholder="Mobile Number" id="mobile">
+                        <input type="email" name="email" placeholder="Your Email" id="email">
+                        <textarea name="message" rows="6" placeholder="Your Message" id="message"></textarea>
+                        <button type="submit" class="btn1 btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+
+        </div>
+        <div class="copyright">
+            <p>Copyright <i class="fa-regular fa-copyright"></i> Gijo. Made with <i class="fa-solid fa-heart"></i> GJ
+                Tech</p>
+        </div>
+    </div>
+
+
+    <a href="#" class="arrow"><i class="fa-solid fa-circle-chevron-up fa-2xl" style="color: #ff004f;"></i></a>
+
+<script>
+     const scriptURL = 'https://script.google.com/macros/s/AKfycbwOASemNrN7PxafH8SHWxLcuWnI12xehQL8Ua7JP-OuJlMphFRE2KJnqL3oBmAlfA1K/exec'
+  const form = document.forms['submit-to-google-sheet']
+const msg =document.getElementById("msg")
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => {
+          msg.innerHTML = "Message sent successfully"
+          setTimeout(function(){
+              msg.innerHTML=""
+          },3000)
+          form.reset()
+      })
+      .catch(error => console.error('Error!', error.message))
+  })
+  </script>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+    <script src="scripts.js"></script>
+</body>
+
+</html>
